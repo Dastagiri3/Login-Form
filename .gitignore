@@ -1,0 +1,7 @@
+node_modules/
+users.db
+users.db-journal
+*.log
+.DS_Store
+.env
+
