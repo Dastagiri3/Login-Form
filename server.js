@@ -1,3 +1,25 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAZ1fpI_2LIRkuL1i3wxAxcAYnJLtND3SA",
+  authDomain: "spk-hardware.firebaseapp.com",
+  projectId: "spk-hardware",
+  storageBucket: "spk-hardware.firebasestorage.app",
+  messagingSenderId: "637951889666",
+  appId: "1:637951889666:web:7063b53a43d4f3f7e3321b",
+  measurementId: "G-KX55RH951L"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const cors = require('cors');
